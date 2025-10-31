@@ -1,7 +1,9 @@
 #include<iostream>
+#include<string>
 using namespace std;
-    int fun1(int *x) {
+    int fun1(int *x,string *s) {
          *x = *x + 10 ;
+        cout<<*s<<endl;
 
         return *x;
     }
@@ -9,7 +11,9 @@ using namespace std;
     int main() {
 
     int a = 10;
-    fun1(&a);
+        string s = "darrel";
+
+    fun1(&a,&s);
         cout<<a<<endl;
         return 0;
 
